@@ -1,0 +1,5 @@
+```mermaid
+    Browser-->>Server: Get spa.js
+    Server-->>Browser: send spa.js, main.css, spa.js, data.json
+    note over Browser: render page
+```
