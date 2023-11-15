@@ -1,7 +1,9 @@
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    note over Browser: send form
+    Browser-->>Server: POST new_note
+    Server-->>Browser: redirect GET notes
+    Browser-->>Server: Get main.css, main.js, data.json
+    Server-->>Browser: new_note.html, main.css, main.js, data.json
+    note over Browser: render page
+
 ```
