@@ -1,0 +1,8 @@
+```mermaid
+    note over Browser: send form
+    Browser-->>Server: Get new_note_spa.json
+    Server-->>Browser: new_note_spa.json
+    Browser-->>Server: Post new_note_spa.json content
+    note over Browser: render page
+
+```
